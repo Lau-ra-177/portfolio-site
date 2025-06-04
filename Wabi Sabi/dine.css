@@ -261,15 +261,16 @@ a {
 }
 .dine_pic_up {
     padding: 0 0 35px 0;
-    border-bottom: 3px solid #fff;
+    /* border-bottom: 3px solid #fff; */
 }
 .dine_pic_up::after {
     content: "";
     position: absolute;
     border-bottom: 3px solid #fff;
-    width: 340px;
+    width: 800px;
     height: 3px;
     top: 304px;
+    right: -50px;
 }
 .dine_pic_up::before {
     content: "";
