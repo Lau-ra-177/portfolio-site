@@ -33,7 +33,7 @@ body {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+4E00-9FFF, U+3000-303F;
+    unicode-range: U+4E00-9FFF, U+3000-303F, U+0030-0039;
 }
 @font-face {
     font-family: 'tc-semibold';
