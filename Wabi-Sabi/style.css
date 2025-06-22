@@ -306,8 +306,8 @@ body {
 }
 .yard_card p {
     margin: 3% 0 0 0;
-    letter-spacing: .3em;
-    font-size: 18px;
+    letter-spacing: .1em;
+    font-size: clamp(14px, 1vw, 18px);;
     left: 0;
     line-height: 1.5em;
 }
@@ -714,6 +714,9 @@ body {
         position:absolute;
         right: 0;
         top:0;
+    }
+    .yard_card p {
+        font-size: 12px;
     }
 }
 
