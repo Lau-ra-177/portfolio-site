@@ -78,7 +78,7 @@ body {
     flex-direction: column;
 }
 .container {
-    max-width: 62.5%;
+    width: 62.5%;
     margin: auto;
     position: relative;
     flex-direction: column;
@@ -674,6 +674,9 @@ body {
 /* 小於 768px：手機 */
 @media (max-width: 767px) {
   /* 手機版樣式 */
+    .container {
+        width: 85%;
+    }
     .main_nav, .banner_right {
         opacity: 0;
     }
