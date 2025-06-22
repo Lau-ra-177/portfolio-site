@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve / 預訂</title>
+        <link rel="stylesheet" href="./2reset.css">
+    <!-- <link rel="stylesheet" href="./font &footer&bg.css"> -->
+    <link rel="stylesheet" href="./reserve.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="reserve_logo">
+            <a href="./2index.html"><img src="./pic/LOGO & Background/black_logo.png" alt=""></a>
+        </div>
+        <div class="reserve_info">
+            <div class="date">入住日 / 退房日
+                <input type="text" id="dateRange" placeholder="選擇入住與退房日期" readonly>
+            </div>
+            <div class="adult_count_area">
+                <label for="adult_count" class="type_count_total">人數</label>
+                <select id="adult_count" name="adultCount">
+                    <option value="1">1 人</option>
+                    <option value="2">2 人</option>
+                    <option value="3">3 人</option>
+                    <option value="4">4 人</option>
+                </select>
+            </div>
+            
+
+            <div class="room_count_area">
+                <label for="room_count" class="type_count_total">房數</label>
+                <select id="room_count" name="roomCount">
+                    <option value="1">1 房</option>
+                    <option value="2">2 房</option>
+                    <option value="3">3 房</option>
+                </select>
+            </div>
+            <div class="check_room"><a href="./reserve.html">查看空房</a></div>
+        </div>
+    </div>
+    <div class="container_body">
+        <div class="room_reserve">
+            <div class="room">
+                <img src="./pic/Stay/stay_room_b1.jpg" alt="">
+                <div class="room_text">
+                    <h3 class="room_title">Sol 靜日居</h3>
+                    <p class="room_p">約 10 坪 | 單人／雙人入住<br>一張雙人床、獨立衛浴、簡約陽台</p>
+                    <p class="room_detail">房間詳情</p>
+                </div>
+                <div class="price">
+                    <div>
+                        <div class="price-weekday">
+                            <p>平日 TWD 11000</p>
+                        </div>
+                        <div class="price_holiday">
+                            <p>假日 TWD 12000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="price_input">
+                        <p>另計15%服務費及稅金</p>
+                        <input type="button" value="加入清單">
+                        <input type="button" value="立即訂房">
+                    </div>
+                </div>
+            </div>
+            <!-- //////////2//////// -->
+            <div class="room">
+                <img src="./pic/Stay/stay_romm_b2.jpg" alt="">
+                <div class="room_text">
+                    <h3 class="room_title">Noka 野香居</h3>
+                    <p class="room_p">約 13 坪 | 雙人入住(加床選擇)<br>一張加大床、小型書桌、自然景窗</p>
+                    <p class="room_detail">房間詳情</p>
+                </div>
+                <div class="price">
+                    <div>
+                        <div class="price-weekday">
+                            <p>平日 TWD 14000</p>
+                        </div>
+                        <div class="price_holiday">
+                            <p>假日 TWD 15000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="price_input">
+                        <p>另計15%服務費及稅金</p>
+                        <input type="button" value="加入清單">
+                        <input type="button" value="立即訂房">
+                    </div>
+                </div>
+            </div>
+            <!-- //////////3//////// -->
+            <div class="room">
+                <img src="./pic/Stay/stay_romm_b3.jpg" alt="">
+                <div class="room_text">
+                    <h3 class="room_title">Lune 月影居</h3>
+                    <p class="room_p">約 18 坪 | 雙人至三人入住<br>加大床+沙發床、浴缸、天窗光影</p>
+                    <p class="room_detail">房間詳情</p>
+                </div>
+                <div class="price">
+                    <div>
+                        <div class="price-weekday">
+                            <p>平日 TWD 17000</p>
+                        </div>
+                        <div class="price_holiday">
+                            <p>假日 TWD 18000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="price_input">
+                        <p>另計15%服務費及稅金</p>
+                        <input type="button" value="加入清單">
+                        <input type="button" value="立即訂房">
+                    </div>
+                </div>
+            </div>
+            <!-- //////////4//////// -->
+            <div class="room">
+                <img src="./pic/Stay/stay_romm_b4.jpg" alt="">
+                <div class="room_text">
+                    <h3 class="room_title">Haku 白影</h3>
+                    <p class="room_p">約 25 坪 | 家庭或雙人長住<br>獨立起居空間、戶外浴池、小庭院</p>
+                    <p class="room_detail">房間詳情</p>
+                </div>
+                <div class="price">
+                    <div>
+                        <div class="price-weekday">
+                            <p>平日 TWD 19000</p>
+                        </div>
+                        <div class="price_holiday">
+                            <p>假日 TWD 20000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="price_input">
+                        <p>另計15%服務費及稅金</p>
+                        <input type="button" value="加入清單">
+                        <input type="button" value="立即訂房">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order">
+            <div class="order_title">待結清單
+                <input type="reset" value="清空待結" id="reset">
+                
+            </div>
+            <div class="order_detail">
+                <i class="fa-solid fa-xmark"></i>
+                <div class="order_detail_type">
+                    <h4>房型</h4>
+                    <h4>入住日期</h4>
+                    <h4>退房日期</h4>
+                    <h4>房數</h4>
+                    <h4>人數</h4>
+                    <h4>訂房金額</h4>
+                    <h4>服務費</h4>
+                    <h4>稅金</h4>
+                </div>
+                <div class="order_detail_info">
+                    <p>Sol 靜日居</p>
+                    <p>2025-06-24</p>
+                    <p>2025-06-25</p>
+                    <p>1 房</p>
+                    <p>2 位</p>
+                    <p>11000</p>
+                    <p>1650</p>
+                    <p>633</p>
+                </div>
+            </div>
+            <div class="order_check">
+                <div class="total_amount">
+                    <h4>應付金額</h4>
+                    <div>
+                        <p>TWD 13283</p>
+                        <p>(已含服務費及稅金)</p>
+                    </div>
+                </div>
+                <div class="deposit_area">
+                    <h4>訂金</h4>
+                    <p>TWD 6642</p>
+                </div>
+                <input type="button" value="前往結帳" id="checkout">
+            </div>
+        </div>
+    </div>
+    <div class="booking_notice">
+        <h3 class="booking_notice_title">付款規範</h3>
+        <div class="booking_notice_text">
+            <h4 style="font-family: 'tc-semibold'">訂房訂金政策：</h4>
+            <p>
+            本飯店線上訂房訂金之收取，依照觀光局頒佈《定型化契約》規定，收取訂單全額的30%做為定金；
+            但住宿日為3日以上之連續假日期間，定金得提高至約定房價總金額的50%。</p>
+
+            <h4 style="font-family: 'tc-semibold'">訂房取消政策:</h4>
+            <p>
+            本飯店線上訂房定金之取消，依照觀光局頒佈《定型化契約》規定處理，請旅客完成取消預訂，
+            系統將通知本飯店，並依契約規定退還定金（約定房價總金額）方式如下：<br>
+            - 旅客住宿日當日取消訂房扣預付訂金金額100%<br>
+            - 旅客於住宿日前1日內取消訂房扣房價預付訂金金額80%<br>
+            - 旅客於住宿日前2-3日內取消訂房扣房價預付訂金金額70%<br>
+            - 旅客於住宿日前4-6日內取消訂房扣房價預付訂金金額60%<br>
+            - 旅客於住宿日前7-9日內取消訂房扣房價預付訂金金額50%<br>
+            - 旅客於住宿日前10-13日內取消訂房扣房價預付訂金金額30%<br>
+            - 旅客於住宿日前14日前(含14日)取消訂房扣房價預付訂金金額0%<br>
+            以上法令規定比率有所異動，則依照觀光局頒佈《定型化契約》之最新規定為準。</p>
+
+            <h4 style="font-family: 'tc-semibold'">特殊取消訂房處理方式(因不可抗拒之因素):</h4>
+            <p>
+            住房旅客如遇颱風地震等天災不可抗力情況，本飯店所在南投縣或住客居住地縣市政府發佈”停止上班上課”，
+            基於安全考量而無法如期入住者，建議變更入住日期或依觀光局定型化契約相關規定辦理。</p>
+
+            <h4 style="font-family: 'tc-semibold'">注意事項</h4>
+            <p>- 本飯店恕不提供加床服務。(超過限定人數，請您現場加開客房，若飯店客滿，每一人將酌收該房定價五折之費用)<br>
+            - 每位住宿貴賓均須實名登記(包括孩童)，請提供身份證或駕照、健保卡辦理入住登記手續，外籍旅客請持護照或外僑居留證(ARC)登記。 若拒絕提供可識別身份之證件，有權拒絕辦理入住登記。同時依照個別旅客訂房定型化契約收取違約金<br>
+            -  入住時間為下午三點之後、退房時間為上午十一點之前。<br>
+            - 恕不接待非住店外客參觀及訪友。<br>
+            - 若客房有其他佈置需求，需事先提出申請及協商，飯店保有同意與否的權利，並將酌收維保清潔費用。<br>
+            - 因應行政院環境部推動減少一次用旅宿用品對環境的衝擊,自2025年1月1日起,本飯店將不主動提供住客一次用旅宿用品
+            (牙刷、牙膏、刮鬍刀、刮鬍泡、浴帽、梳子)。<br>
+            提醒您入住時請自備上述用品，另為維護優質服務，若您仍需本飯店提供，請事先吩咐我們為您準備。</p>
+        </div>
+    </div>
+<!-- ///////////////////////// -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./fontawesome-free-6.7.2-web/js/all.min.js"></script>
+    <script>
+        const today = new Date();
+        const tomorrow = new Date();
+        tomorrow.setDate(today.getDate() + 1); // 加一天（住一晚）
+
+        flatpickr("#dateRange", {
+            mode: "range",
+            dateFormat: "Y-m-d",
+            minDate: today, // 不可選今天以前
+            defaultDate: [today, tomorrow], // 預設今天入住，明天退房
+            locale: {
+            rangeSeparator: " ~ "
+            }
+        });
+    </script>
+</body>
+</html>

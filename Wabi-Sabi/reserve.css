@@ -1,40 +1,353 @@
-.reserve {
-    background-color: rgb(0, 0, 0, 0.3);
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
-.reserve_area {
+body {
     background-image: url(./pic/LOGO\ &\ Background/reserve_background.png);
-    position: absolute;
-    right: 0;
-    width: 600px;
-    height: 100vh;
-    border-radius: 30px 0 0 30px;
+    font-family: 'font-family';
 }
-.reserve_title {
-    letter-spacing: .1em;
-    font-family: Adamina;
-    font-size: 45px;
-    border-bottom: 2px solid #000;
-    padding: 0 0 15px 0;
+@font-face {
+    font-family: 'font-family';
+    src: url(./font/Adamina-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+    font-family: 'font-family';
+    src: url(./font/NotoSerifTC-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+4E00-9FFF, U+0030-0039;
+}
+@font-face {
+    font-family: 'tc-semibold';
+    src: url(./font/NotoSerifTC-SemiBold.woff2) format('woff2');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+4E00-9FFF;
+}
+/* ////////////////// */
+.container {
+    width: 62.5%;
+    margin: auto;
+}
+.reserve_logo {
+    display: flex;
+    justify-content: center;
+}
+.reserve_logo img {
+    width: 10vw;
+}
+/* /////////// */
+.reserve_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.date {
+    width: 50%;
+    font-size: clamp(12px, 1.5vw, 16px);
+}
+#dateRange {
+    width: 60%;
+    height: 30px;
+    border:none;
+    appearance: none;
+    outline: none;
+    border-radius: 5px ;
+    box-shadow: 0 1px 5px 1px #aaa;
     text-align: center;
-    margin: 50px 30px;
+    box-sizing: border-box;
+    font-size: clamp(12px, 1.5vw, 16px);
+    letter-spacing: .1em;
+    font-family: 'Noto Serif TC';
+    margin-left: .5vw;
 }
-.reserve_input input {
-    background-color: #695043;
+.check_room {
+    width: 15%;
+    font-size: clamp(12px, 1.5vw, 16px);
+    background-color: #B69D81;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    letter-spacing: .1em;
+    color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 1px #aaa;
+    height: 30px;    
+    position: relative;
+    right: -5%;
+}
+.check_room a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    text-align: center;
+
+}
+.adult_count_area, .room_count_area {
+    width: 20%;
+    display: flex;
+}
+/* #adult_count option {
+    cursor: pointer;
+} */
+
+
+#adult_count, #room_count{
+    width: 63%;
+    font-size: 16px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Noto Serif TC';
+    letter-spacing: .1em;
+    box-shadow: 0 1px 5px 1px #aaa;
+    border: none;
+    border-radius: 5px ;
+    outline: none;
+    appearance: none;
+    margin-left: .5vw;
+    cursor: pointer;
+}
+.type_count_total {
+    display:flex;
+    align-items: center;
+    font-size: clamp(12px, 1.5vw, 16px);
+}
+#room_count:focus {
+    background-color: none;
+    outline: none;
+}
+/* /////////////////////////////// */
+.container_body {
+    width: 80%;
+    display: flex;
+    margin: 5% auto;
+}
+.room_reserve {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:0 3% 3% 3%;
+    border-radius: 5px ;
+}
+.room {
+    display: flex;
+    border-bottom: 1px solid#767676;
+    padding-bottom: 5%;
+    letter-spacing: .1em;
+    margin-top: 5%;
+}
+.room img{
+    width: 20%;
+}
+.room_text {
+    margin-left: 2%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.room_title {
+    font-weight: normal;
+    border-bottom: 1px solid#000 ;
+    width: max-content;
+    padding-bottom: 1%;
+    margin-bottom: 5%;
+    font-size: clamp(12px, 1.5vw, 18px);
+    font-family: 'tc-semibold';
+}
+.room_p {
+    margin-left: 10% ;
+    font-size: clamp(10px, 1.5vw, 14px);
+    line-height: 1.5em;
+}
+.room_detail {
+    font-size: clamp(10px, 1.5vw, 14px);
+    margin-top: auto;
+    position: relative;
+    width: max-content;
+    cursor: pointer;
+    padding-bottom: 1%;
+}
+
+
+
+.room_detail::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    border-bottom: 1px solid #000;
+    width: 0;
+    transition: width 0.4s ease;
+}
+
+.room_detail:hover::after {
+    width: 100%;
+}
+.price {
+    font-size: clamp(12px, 1.5vw, 16px);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end
+
+}
+.price-weekday {
+    border-bottom: 1px solid#000;
+    padding-bottom: 3%;
+}
+.price_holiday {
+    padding-top: 5%;
+}
+.price_input {
+    margin-top: auto;
+}
+.price_input p {
+    font-size: clamp(10px, 1.5vw, 14px);
+    color: #3e3e3e;
+    display: flex;
+    justify-content: flex-end;
+}
+.price_input input {
+    border: none;
+    font-size: clamp(12px, 1.5vw, 18px);
+    font-family: 'font-family';
+    border-radius: 5%;
+    padding: .3vw 2vw;
+    margin-top: 5%;
+    box-shadow: 0 3px 5px 1px rgb(173, 173, 173);
+    cursor: pointer;
+}
+.price_input input:nth-of-type(1) {
+    background-color: #FFF;
+}
+.price_input input:nth-of-type(2) {
+    background-color: #B69D81;
+    color: #FFF;
+    margin-left: .5vw;
+}
+
+
+
+/* ///////////////////////// */
+
+
+.order {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 35%;
+    height: 100%;
+    margin-left: 1%;
+    border-radius: 5px ;
+    letter-spacing: .1em;
+    line-height: 1.7em;
+    position: sticky;
+    top: 5%;
+}
+.order_title {
+    font-weight: normal;
+    margin-top: 1.8vw;
+    padding-bottom: 3%;
+    border-bottom: 1px solid#000;
+    font-family: 'tc-semibold';
+    font-size: clamp(14px, 1.5vw, 20px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#reset {
+    border: none;
+    background: none;
+    color: #7a7a7a;
+    font-family: 'font-family';
+    margin-left: 10%;
+}
+.order_detail {
+    width: 80%;
+    background-color: #F0ECE4;
+    margin: 10% auto;
+    padding:5% 3% ;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.order_detail svg {
+    position: absolute;
+    right: -2%;
+    top: -3%;
+}
+
+
+.order_detail h4 {
+    font-weight: normal;
+    font-size: clamp(10px, 1.5vw, 14px);
+}
+.order_detail p {
+    font-size: clamp(10px, 1.5vw, 14px);
+    color: #616161;
+}
+.order_check {
+    width: 80%;
+    margin: 10% auto;
+}
+.total_amount {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid#000;
+    /* padding-bottom: 5%; */
+    margin: 5% 0;
+}
+.total_amount p:nth-of-type(2) {
+    font-size: 12px;
+    color: #7a7a7a;
+}
+.deposit_area {
+    display: flex;
+    justify-content: space-between;
+}
+.order_check p{
+    font-weight: normal;
+    font-size: 16px;
+    text-align: end;
+}
+#checkout {
+    display: flex;
+    justify-content: center;
+    border:none;
+    background-color: #B69D81;
+    color: #FFF;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'font-family';
+    width: 100%;
+    margin-top: 10%;
+    padding: .3vw 0;
+    box-shadow: 0 3px 5px 1px rgb(173, 173, 173);
+}
+
+/* ///////////////////// */
+.booking_notice {
+    width: 80%;
+    margin: 0 auto 3% auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 3%;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+}
+.booking_notice_title {
     color: #fff;
-    writing-mode: vertical-rl;
-    position: fixed;
-    height: 120px;
-    width: 40px;
-    bottom: 125px;
-    right: 0;
-    letter-spacing: 5px;
-    font-size: 20px;
-    border-radius: 20px 0 0 20px;
-    border: 0px;
-    box-shadow: 0 0 2px 2px #322721;
-    font-family:'Noto Serif TC';
-    z-index: 1;
+    font-weight: normal;
+    font-size: clamp(14px,2vw, 25px);
+    font-family: 'tc-semibold';
+}
+.booking_notice_text {
+    margin-left: 13%;
+}
+.booking_notice_text h4{
+    font-weight: normal;
+    margin-top: 2%;
+}
+.booking_notice_text p {
+    font-size: clamp(10px, 1.2vw, 14px);
+    margin-left: 5%;
 }

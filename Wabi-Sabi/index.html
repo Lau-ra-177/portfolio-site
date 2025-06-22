@@ -1,92 +1,145 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wabi-Sabi</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
-<body>
+<body>     
+    
     <div class="banner">
-        <div class="banner_pic">
+        <div class="banner_left">
+            <img src="./pic/LOGO & Background/white_logo.png"alt="Wabi-Sabi_logo">
         </div>
         <div class="reserve_input">
-            <input type="button" value="立即訂房">
+            <input type="button" value="立即訂房" id="go_reserve">
         </div>
-        <div class="container">
-            <nav class="main_nav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./yard.html">Yard</a></li>
-                    <li><a href="./stay.html">Stay</a></li>
-                    <li><a href="./dine.html">Dine</a></li>
-                </ul>
-            </nav>
+    </div>
+    <!-- ///////////////////////////////////////////// -->
+    <div class="reserve_bg">
+        <div class="reserve_area">
+            <h1 class="reserve_title">Reserve</h1>
+            <div class="reserve_info">
+                <div class="date">入住日 / 退房日
+                    
+                    
 
-            <div class="s_banner">
-                <img src="./pic/Home/banner-1.png" alt="">
-                <p>在島嶼的一隅，風聲低語，光影靜默<br>
-                以自然材質、留白空間，<br>
-                我們相信「美」存在於不完美之中<br>
-                嶼上每一棟建築，皆以「侘寂」為心</p>
+                    <input type="text" id="dateRange" placeholder="選擇入住與退房日期" readonly>
+                </div>
+                <div class="adult_count_area">
+                    <label for="adultcount" class="type_count_total">人數</label>
+                    <select id="type_count" name="adultCount">
+                        <option value="1">1 人</option>
+                        <option value="2">2 人</option>
+                        <option value="3">3 人</option>
+                        <option value="4">4 人</option>
+                    </select>
 
-                <p>容納時間的痕跡與內在的呼吸<br>
-                這裡沒有喧囂，只有剛剛好的靜<br>
-                讓生活放慢、心緒沉澱，<br>
-                於無聲之所，重新與自己相遇。</p>
-                <div class="bottom_line"></div>
+                </div>
+                
+
+                <div class="room_count_area">
+                    <label for="roomcount" class="type_count_total">房數</label>
+                    <select id="type_count" name="roomCount">
+                        <option value="1">1 房</option>
+                        <option value="2">2 房</option>
+                        <option value="3">3 房</option>
+                    </select>
+
+                </div>
+                <div class="check_room"><a href="./reserve.html" target="_blank">查看空房</a></div>
             </div>
         </div>
     </div>
+<!-- /////////////////////////////////////////////////////// -->
+    <div class="container_nav">
+        <nav class="main_nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./yard.html">Yard</a></li>
+                <li><a href="./stay.html">Stay</a></li>
+                <li><a href="./dine.html">Dine</a></li>
+            </ul>
+        </nav>
+        <div class="banner_right">
+            <img src="./pic/Home/banner-1.png" alt="">
+            <p>在島嶼的一隅，風聲低語，光影靜默<br>以自然材質、留白空間，<br>
+            我們相信「美」存在於不完美之中<br>
+            嶼上每一棟建築，皆以「侘寂」為心
+            </p>
+        </div>
+    </div> 
     <div class="container">
         <div class="yard_area">
-            <h3>Yard</h3>
+            <h3 class="section-title">Yard</h3>
             <div class="yard_card">
                 <p>無喧囂的人聲，<br>
                 只有白砂間的足跡與木影搖曳。<br>小徑隨地勢蜿蜒，連接起石、樹與水的低語。<br>每一棵老樹、每一道牆痕，都未被修飾，<br>只為保留時間原本的樣子。<br>
                 <br>
                 沒有過度雕琢的景觀，<br>只有自然慢慢進駐後留下的空間，<br>讓每一次呼吸，都與風草共振。</p>
-                <img src="./pic/Home/Yard-s1.png" alt="">
-                <img src="./pic/Home/Yard-s2.png" alt="">
-                <img src="./pic/Home/Yard-s3.png" alt="">
-                <img src="./pic/Home/Yard-big.png" alt="">
+                <div class="more_button">
+                    <a href="#">View More-</a>
+                </div>
+                <div class="yard_card_pic">
+                    <img src="./pic/Home/Yard-s1.png" alt="">
+                    <img src="./pic/Home/Yard-s2.png" alt="">
+                    <img src="./pic/Home/Yard-s3.png" alt="">
+                    <img src="./pic/Home/Yard-big.png" alt="">
+                </div>
             </div>
         </div>
 
         <div class="stay_area">
-            <h3>Stay</h3>
+            <h3 class="section-title">Stay</h3>
             <div class="stay_card">
-                <p>光，從門隙傾瀉<br>
-                照亮一張無語的茶几，與一方靜默的床。
-                木紋未經拋光，牆面留有時間的痕跡。只給你剛剛好的空氣與靜。
-                只需來此暫居、停留、或者遺忘自己。</p>
-                <img src="./pic/Home/Stay-big.png" alt="">
-                <img src="./pic/Home/Stay-s1.png" alt="">
-                <img src="./pic/Home/Stay-s2.png" alt="">
-                <img src="./pic/Home/Stay-s3.png" alt="">
+                <div class="stay_card_p">
+                    <p>光，從門隙傾瀉<br>
+                    照亮一張無語的茶几，與一方靜默的床。<br>
+                    木紋未經拋光，牆面留有時間的痕跡。<br>
+                    只需來此暫居、停留、或者遺忘自己。
+                    </p>                    
+                </div>
+                <div class="more_button stay_more_button">
+                    <a href="#">View More-</a>
+                </div>
+                <div class="stay_card">
+                    <img src="./pic/Home/Stay-big.png" alt="">
+                    <img src="./pic/Home/Stay-s1.png" alt="">
+                    <img src="./pic/Home/Stay-s2.png" alt="">
+                    <img src="./pic/Home/Stay-s3.png" alt=""> 
+                </div>
             </div>
         </div>
+
         <div class="dine_area">
-            <h3>Dine</h3>
+            <h3 class="section-title">Dine</h3>
             <div class="dine_card">
-                <img src="./pic/Home/Dine-1.jpg" alt="">
-                <img src="./pic/Home/Dine-2.jpg" alt="">
-                <img src="./pic/Home/Dine-3.jpg" alt="">
-                <img src="./pic/Home/Dine-4.jpg" alt="">
-                <img src="./pic/Home/Dine-5.jpg" alt="">
-                <div class="dine_menu_line"></div>
+                <div class="dine_card_pic">
+                    <img src="./pic/Home/Dine-1.jpg" alt="">
+                    <img src="./pic/Home/Dine-2.jpg" alt="">
+                    <img src="./pic/Home/Dine-3.jpg" alt="">
+                    <img src="./pic/Home/Dine-4.jpg" alt="">
+                    <img src="./pic/Home/Dine-5.jpg" alt="">
+                    <div class="dine_menu_line"></div>
+                </div>
                 <div class="dine_menu">
                     Breakfast 早餐<br>
                     Lunch 午餐<br>
                     Tea Time 午茶<br>
                     Dinner 晚餐<br>
                 </div>
+                <div class="more_button dine_more_button">
+                    <a href="#">View More-</a>
+                </div>
             </div>
         </div>
     </div>
-    
-
     <div class="topics_area">
         <div class="container">
             <div class="topics">
@@ -115,63 +168,68 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>            
 
     <div class="container">
-        <div class="notice_area">
-            <div class="by_car">
-                <h3>-自駕前往｜By Car</h3>
-                <p>從最近的城鎮出發，沿12號公路向東行駛約30分鐘。<br>
-                經過石造拱橋後右轉進入杉木小徑，順著林間私道前行，即可抵達。</p>
-                <p class="notice_enp">From the nearest town, follow Route 12 eastward for approximately 30 minutes.<br>
-                After crossing the stone bridge, turn right onto Cedar Lane. The retreat lies at the end of a quiet forest road.</p>
-            </div>
-            <div class="by_train">
-                <h3>-搭乘火車 ｜By Train</h3>
-                <p>搭乘海岸特快列車至「川汐站」，我們提供預約接駁服務，車程約25分鐘。</p>
-                <p class="notice_enp">Take the coastal express line to Kawashi Station.<br>
-                A shuttle service is available by reservation (approximately 25 minutes).</p>
-            </div>
-            <div class="by_air">
-                <h3>-飛機｜By Air</h3>
-                <p>建議搭乘班機至「淺野機場」，可預約專車接送，<br>
-                沿著山坡緩行約45分鐘，即可抵達靜謐山林中的渡假村。</p>
-                <p class="notice_enp">Fly into Asano Regional Airport. Airport transfers can be arranged upon request<br>
-                (a 45-minute scenic drive through the hills).</p>
+        <div class="directions_area">
+            <div class="directions_info">
+                <div class="by_car">
+                    <h3 class="by_title">自駕前往｜By Car</h3>
+                    <p>從最近的城鎮出發，沿12號公路向東行駛約30分鐘。<br>
+                    經過石造拱橋後右轉進入杉木小徑，順著林間私道前行，即可抵達。</p>
+                    <p class="notice_enp">From the nearest town, follow Route 12 eastward for approximately 30 minutes.<br>
+                    After crossing the stone bridge, turn right onto Cedar Lane. The retreat lies at the end of a quiet forest road.</p>
+                </div>
+                <div class="by_train">
+                    <h3 class="by_title">搭乘火車 ｜By Train</h3>
+                    <p>搭乘海岸特快列車至「川汐站」，我們提供預約接駁服務，車程約25分鐘。</p>
+                    <p class="notice_enp">Take the coastal express line to Kawashi Station.<br>
+                    A shuttle service is available by reservation (approximately 25 minutes).</p>
+                </div>
+                <div class="by_air">
+                    <h3 class="by_title">飛機｜By Air</h3>
+                    <p>建議搭乘班機至「淺野機場」，可預約專車接送，<br>
+                    沿著山坡緩行約45分鐘，即可抵達靜謐山林中的渡假村。</p>
+                    <p class="notice_enp">Fly into Asano Regional Airport. Airport transfers can be arranged upon request<br>
+                    (a 45-minute scenic drive through the hills).</p>
+                </div>
+            </div>    
+        </div>
+
+        <div class="footer">
+            <div class="footer_topline">
+                <button id="backToTop">TOP</button>
             </div>
             <div class="check_area">
-                <div class="reserve_car">
-                    <p>接駁車服務需於24小時前預約，敬請提前安排。</p>
-                    <p class="notice_enp">Shuttle service requires booking at least 24 hours in advance.</p>
-                </div>
-                <p class="notice_enp">Check-in(15:00~)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check-out(~11:00)</p>
-            </div>
-            <div class="map">
-                <img src="./pic/Home/map.jpg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="container">
-            <div class="site-footer">
-            <img src="./pic/LOGO & Background/black_logo.png" alt="">
-            <div class="address_area">
+                <p>接駁車服務需於24小時前預約，敬請提前安排。</p>
+                <p>Shuttle service requires booking at least 24 hours in advance.</p>
+                <p>Check-in(15:00~)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check-out(~11:00)</p>
                 <div class="address">
-                    <div class="address_en">No. 88, Cedar Lane, Asano Hills, Kawashi Region</div>       
-                    <div class="address_zh">川汐區 杉木小徑88號，淺野山丘</div>
-                    <div class="phone_number"> +81-90-1234-5678</div>
-                </div>
-                <div class="icon_area">
-                    <div class="copyright">COPYRIGHT © 2025 CHUANG</div>
-                    <div class="icon">
+                    <div class="address_en">No. 88, Cedar Lane, Asano Hills, Kawashi Region
+                    </div>       
+                    <div class="address_zh">川汐區 杉木小徑88號,淺野山丘
+                    </div>
+                    <number class="phone_number"> +81-90-1234-5678
+                </number>
+            </div>
+            </div>
+            <div class="footer_logo">
+                <img src="./pic/LOGO & Background/white_logo.png" alt="" class="footer_logo_img">
+                <div class="icon">
+                    <p>COPYRIGHT © 2025 CHUANG
+                    </p>
+                    <div class="follow_icon">
                         <img src="./pic/Home/Instagram.png" alt="">
                         <img src="./pic/Home/Facebook.png" alt="">
                     </div>
                 </div>
             </div>
-            </div>
+
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./script.js"></script>
+
 </body>
 </html>
