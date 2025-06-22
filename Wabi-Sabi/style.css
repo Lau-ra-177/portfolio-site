@@ -686,7 +686,7 @@ body {
         bottom: 5%;
         writing-mode:horizontal-tb;
         height: 30px;
-        width: 30vw;
+        width:40vw;
         border-radius: 15px;
         left: 50%;
         transform: translateX(-50%);
