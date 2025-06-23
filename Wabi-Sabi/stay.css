@@ -173,3 +173,63 @@
     transform: rotate(50deg);
 }
 /* ///////////////// */
+@media (max-width: 767px) {
+    .room_icon , .room:nth-child(-n+4):after, .room:nth-child(-n+4)::before{
+        display: none;
+    }
+    .room {
+        margin: 20% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .room_pic_s img {
+        display: none;
+    }
+    .price {
+        position: relative;
+    }
+    .room_types_title_div {
+        left: 0;
+        height: 79%;
+    }
+    .room_types_title {
+        font-size: 20px;
+    }
+    .room_pic_b img {
+        width: 40vw;
+    }
+    .room_title {
+        left: 0;
+        font-size:18px;
+    }
+    .room_pic {
+        flex-wrap: wrap !important;
+        justify-content: flex-end;
+    }
+    .room_types {
+        flex-wrap: wrap !important;
+    }
+    .room-info {
+        text-align: end;
+    }
+    .price {
+        justify-content: flex-end;
+        
+    }
+    .price p {
+        font-size: 16px;
+    }
+    .room_text p {
+        margin-bottom: 10%;
+        font-size:16px;
+    }
+    .price a {
+        display: block;
+        right: 0;
+        margin-left: 5%;
+    }
+    .price svg {
+        height: 100%;
+    }
+}
