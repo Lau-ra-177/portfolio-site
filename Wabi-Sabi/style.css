@@ -2,6 +2,7 @@ body {
     background-image: url(./pic/LOGO\ &\ Background/background.png);
     position: relative;
     font-family: 'font-family', serif;
+    
 }
 /* @font-face {
     font-family: 'font-family';
@@ -138,7 +139,6 @@ body {
     justify-content: center;
     text-align: center;
     padding: 1.5em 0 0 0;
-    white-space: nowrap;
 }
 .reserve_input input {
     background-color: #695043;
@@ -414,6 +414,7 @@ body {
     margin: 15% 0 0 0;
     background-color: rgba(240, 236, 228, 0.3);
     padding: 3% 0;
+    width: 100%;
     letter-spacing: .1em;
     line-height: 1.5em;
 }
@@ -657,14 +658,14 @@ body {
     .section-title {
         display: inline-block;
         position: relative; 
-        font-size: 50px;
+        font-size: 20px;
         text-shadow: none;
-        left: 50px;
+        left: 0;
         margin: 10px;
         font-weight: normal;
     }
     .topics-title{
-        font-size: 50px;
+        font-size: 20px;
         text-shadow: none;
         left: 0;
         margin: 10px;
