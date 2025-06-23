@@ -370,6 +370,15 @@ body {
     line-height: 1.5em;
     position: relative;
 }
+.dine_title {
+    font-size: 3vw;
+    position: relative;
+    letter-spacing: .3em;
+    margin-bottom: 10%;
+    left: -20%;
+    padding-bottom: 3%;
+    text-shadow:1px 3px 5px #878787;
+}
 .dine_card {
     display: flex;
     justify-content: space-between;
@@ -677,8 +686,8 @@ body {
         margin: 10px;
         font-weight: normal;
     }
-    .topics-title{
-        font-size: 16px;
+    .topics-title, .dine_title{
+        font-size: 30px;
         text-shadow: none;
         left: 0;
         margin: 10px;
@@ -725,7 +734,7 @@ body {
         text-wrap: wrap;
     }
     .dine_menu {
-        right: 0;
+        display: none;
     }
 
     .footer {
