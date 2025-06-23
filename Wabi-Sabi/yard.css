@@ -203,5 +203,25 @@
     }
     .content img:nth-child(3) {
         position: relative;
+        right: 0;
+    }
+    .content img:nth-child(2) {
+        margin: 0;
+        width: 40%;
+    }
+    .content img:nth-child(4) {
+        margin: 0;
+    }
+    .content::before {
+        display: none;
+    }
+    .content p {
+        position: relative;
+    }
+    .content img:nth-child(1) {
+        width: 40vw;
+    }
+    .content img {
+        display: block;
     }
 }
