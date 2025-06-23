@@ -649,8 +649,9 @@ body {
     }
     /* ==========================*/
     .yard_area {
-        margin-top: 100vh;
+        margin-top: 110vh;
         position: relative;
+        height: 80vh;
     }
     .section_button a:hover::after {
         display: none;
@@ -658,10 +659,10 @@ body {
     .section-title {
         display: inline-block;
         position: relative; 
-        font-size: 16px;
+        font-size: 20px;
         text-shadow: none;
-        left: 25px;
-        top:100px;
+        left:15px;
+        top:150px;
         margin: 10px;
         font-weight: normal;
     }
@@ -687,6 +688,7 @@ body {
     .card_text {
         order:2;
         flex-grow: 1;
+        margin-top: 20%;
     }
 
     .card_pic img:nth-child(-n+3) {
@@ -702,11 +704,12 @@ body {
     }
     .card_bpic {
         margin-left: auto;
+        width: 50vw;
     }
     .card_text p {
         font-size: 14px;
         letter-spacing: .1em;
-        line-height: 1.5em;
+        line-height: 3em;
         padding: 0;
         text-wrap: wrap;
     }
