@@ -656,8 +656,7 @@ body {
     }
     .section-title {
         display: inline-block;
-        position: relative;
-        bottom: ;        
+        position: relative; 
         font-size: 50px;
         text-shadow: none;
         left: 50px;
@@ -702,11 +701,12 @@ body {
     .card_bpic {
         margin-left: auto;
     }
-    .card p {
+    .card_text p {
         font-size: 18px;
         letter-spacing: .1em;
         line-height: 1.5em;
         padding: 0;
+        text-wrap: wrap;
     }
     .dine_menu {
         right: 0;
