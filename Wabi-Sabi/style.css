@@ -710,14 +710,31 @@ body {
         box-shadow: none;
         font-size: 18px;
     }
+    .section-title {
+        display: inline-block;
+    }
     .section-title, .topics-title{
         font-size: 30px;
         text-shadow: none;
         left: 0;
+        margin: 10px;
     }
-    .section-title::before {
+    .section-title::after {
         display: none;
     }
+    .section_button a {
+        border-bottom: 1px solid #000;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card_text {
+        order:2;
+        flex-grow: 1;
+    }
+
     .card_pic img:nth-child(-n+3) {
         display: none;
     }
@@ -729,8 +746,12 @@ body {
         right: 0;
         top:0;
     }
+    .card_bpic {
+        margin-left: auto;
+    }
     .card p {
         font-size: 12px;
+        padding: 0;
     }
     .dine_menu {
         right: 0;
