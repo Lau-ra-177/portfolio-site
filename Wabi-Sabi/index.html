@@ -27,9 +27,6 @@
             <h1 class="reserve_title">Reserve</h1>
             <div class="reserve_info">
                 <div class="date">入住日 / 退房日
-                    
-                    
-
                     <input type="text" id="dateRange" placeholder="選擇入住與退房日期" readonly>
                 </div>
                 <div class="adult_count_area">
@@ -75,47 +72,54 @@
             </p>
         </div>
     </div> 
+
+<!-- /=================yard=======================/ -->   
+
     <div class="container">
         <div class="yard_area">
             <h3 class="section-title">Yard</h3>
-            <div class="yard_card">
-                <p>無喧囂的人聲，<br>
-                只有白砂間的足跡與木影搖曳。<br>小徑隨地勢蜿蜒，連接起石&#12289;樹與水的低語。<br>每一棵老樹、每一道牆痕，都未被修飾，<br>只為保留時間原本的樣子。<br>
-                <br>
-                沒有過度雕琢的景觀，<br>只有自然慢慢進駐後留下的空間，<br>讓每一次呼吸，都與風草共振。</p>
-                <div class="more_button">
-                    <a href="#">View More-</a>
+            <div class="card">
+                <div class="card_text">
+                    <p>無喧囂的人聲，<br>
+                    只有白砂間的足跡與木影搖曳。<br>小徑隨地勢蜿蜒，連接起石、樹與水的低語。<br>每一棵老樹、每一道牆痕，都未被修飾，<br>只為保留時間原本的樣子。
+                    <div class="section_button">
+                        <a href="./yard.html" class="more_button" >View More-</a>
+                    </div>
+                    <div class="card_pic">
+                        <img src="./pic/Home/Yard-s1.png" alt="">
+                        <img src="./pic/Home/Yard-s2.png" alt="">
+                        <img src="./pic/Home/Yard-s3.png" alt="">
+                    </div>
                 </div>
-                <div class="yard_card_pic">
-                    <img src="./pic/Home/Yard-s1.png" alt="">
-                    <img src="./pic/Home/Yard-s2.png" alt="">
-                    <img src="./pic/Home/Yard-s3.png" alt="">
-                    <img src="./pic/Home/Yard-big.png" alt="">
-                </div>
+                <img src="./pic/Home/Yard-big.png" alt="" class="card_bpic">
             </div>
         </div>
 
+<!-- /================stay========================/ -->
+
         <div class="stay_area">
             <h3 class="section-title">Stay</h3>
-            <div class="stay_card">
-                <div class="stay_card_p">
+            <div class="card">
+                <img src="./pic/Home/Stay-big.png" alt="" class="card_bpic">
+                <div class="card_text">
                     <p>光，從門隙傾瀉<br>
                     照亮一張無語的茶几，與一方靜默的床。<br>
                     木紋未經拋光，牆面留有時間的痕跡。<br>
-                    只需來此暫居、停留、或者遺忘自己。
-                    </p>                    
+                    只需來此暫居、停留、或者遺忘自己。</p>
+                    <div class="section_button">
+                        <a href="./stay.html" class="more_button" >View More-</a>
+                    </div>
+                    <div class="card_pic">
+                        <img src="./pic/Home/Stay-s1.png" alt="">
+                        <img src="./pic/Home/Stay-s2.png" alt="">
+                        <img src="./pic/Home/Stay-s3.png" alt="">
+                    </div>
                 </div>
-                <div class="more_button stay_more_button">
-                    <a href="#">View More-</a>
-                </div>
-                <div class="stay_card">
-                    <img src="./pic/Home/Stay-big.png" alt="">
-                    <img src="./pic/Home/Stay-s1.png" alt="">
-                    <img src="./pic/Home/Stay-s2.png" alt="">
-                    <img src="./pic/Home/Stay-s3.png" alt=""> 
-                </div>
+                
             </div>
         </div>
+        
+<!-- /==================dine======================/ -->
 
         <div class="dine_area">
             <h3 class="section-title">Dine</h3>
@@ -123,27 +127,31 @@
                 <div class="dine_card_pic">
                     <img src="./pic/Home/Dine-1.jpg" alt="">
                     <img src="./pic/Home/Dine-2.jpg" alt="">
-                    <img src="./pic/Home/Dine-3.jpg" alt="">
-                    <img src="./pic/Home/Dine-4.jpg" alt="">
+                    <div class="dine_card_pic_s">
+                        <img src="./pic/Home/Dine-3.jpg" alt="">
+                        <img src="./pic/Home/Dine-4.jpg" alt="">
+                    </div>
                     <img src="./pic/Home/Dine-5.jpg" alt="">
-                    <div class="dine_menu_line"></div>
                 </div>
                 <div class="dine_menu">
-                    Breakfast 早餐<br>
-                    Lunch 午餐<br>
-                    Tea Time 午茶<br>
-                    Dinner 晚餐<br>
-                </div>
-                <div class="more_button dine_more_button">
-                    <a href="#">View More-</a>
+                    <p>
+                        Breakfast 早餐<br>
+                        Lunch 午餐<br>
+                        Tea Time 午茶<br>
+                        Dinner 晚餐<br>
+                    </p>
+                    <div class="section_button">
+                        <a href="./dine.html" class="more_button" >View More-</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+<!-- ===================================== -->
     <div class="topics_area">
         <div class="container">
             <div class="topics">
-                <h3>Topics</h3>
+                <h3 class="topics-title">Topics</h3>
                 <div class="news">
                     <div class="news_1">
                         <p class="news_time">Now – June 30, 2025</p>
@@ -169,7 +177,7 @@
             </div>
         </div>
     </div>            
-
+<!-- ================================================== -->
     <div class="container">
         <div class="directions_area">
             <div class="directions_info">
@@ -201,9 +209,11 @@
                 <button id="backToTop">TOP</button>
             </div>
             <div class="check_area">
-                <p>接駁車服務需於24小時前預約，敬請提前安排。</p>
-                <p>Shuttle service requires booking at least 24 hours in advance.</p>
-                <p>Check-in(15:00~)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check-out(~11:00)</p>
+                <div class="check_area_detail">
+                    <p>接駁車服務需於24小時前預約，敬請提前安排。</p>
+                    <p>Shuttle service requires booking at least 24 hours in advance.</p>
+                    <p>Check-in(15:00~)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check-out(~11:00)</p>
+                </div>
                 <div class="address">
                     <div class="address_en">No. 88, Cedar Lane, Asano Hills, Kawashi Region
                     </div>       
