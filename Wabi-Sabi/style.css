@@ -357,6 +357,7 @@ body {
     margin:15% 0 0 0;
     letter-spacing: .1em;
     line-height: 1.5em;
+    position: relative;
 }
 .dine_card {
     display: flex;
@@ -470,73 +471,7 @@ body {
 .news_p {
     font-size: 14px;
 }
-/* .topics_area {   
-    margin: 100px 0 0 0;
-    background-color: rgba(240, 236, 228, 0.3);
-    background-size: 50%;
-    padding: 0 0 3% 0;
-}
-.topics h3 {
-    font-size: 3.125vw;
-    letter-spacing: .2em;
-    width: 9vw;
-    text-shadow: 0 3px 5px  rgba(0, 0, 0, 0.2);
-    padding: 3% 0 0 0;
-}
-.news {
-    background-color: rgba(182, 157, 129, 0.4);
-    border-left:1px solid#ffffff;
-    padding: 0 0 0 1vw;
-    letter-spacing: .1em;
-    line-height: 1.5em;
-    position: relative;
-    width: 90%;
-    right: -25%;
-}
-.news_1 ,.news_3{
-    padding: 10px 0;
-    white-space: nowrap;
-}
-.news_2,.news_4{
-    border-bottom:1px solid#ffffff;
-    width: 90%;
-    padding: 10px 0;
-    white-space: nowrap;
-}
-.news_time {
-    font-size: 12px;
-    color: #515151;
-}
-.news_title {
-    font-size: 15px;
-    padding: 5px 0 0 1vw;
-    font-weight: normal;
-    font-family: "tc-semibold";
-}
-.news_p {
-    font-size: 13px;
-    padding: 0 0 0 1vw;
-    text-wrap: auto;
-}
 
-.news_1::before {
-    content: '';
-    position: absolute;
-    left: -60px;            
-    top: 0;
-    width: 100%;             
-    height: 25%;
-    border-bottom:1px solid #ffffff;
-}
-.news_3::before {
-    content: '';
-    position: absolute;
-    left: -60px;            
-    top: 0;
-    width: 100%;             
-    height: 75%;
-    border-bottom:1px solid #ffffff;
-} */
 /* ///////////////////////////////////// */
 .directions_area {
     position: relative;
@@ -714,18 +649,27 @@ body {
     /* ==========================*/
     .yard_area {
         margin-top: 100vh;
+        position: relative;
     }
     .section_button a:hover::after {
         display: none;
     }
     .section-title {
         display: inline-block;
+        position: relative;
+        bottom: ;        
+        font-size: 50px;
+        text-shadow: none;
+        left: 50px;
+        margin: 10px;
+        font-weight: normal;
     }
-    .section-title, .topics-title{
-        font-size: 30px;
+    .topics-title{
+        font-size: 50px;
         text-shadow: none;
         left: 0;
         margin: 10px;
+        font-weight: normal;
     }
     .section-title::after {
         display: none;
@@ -738,7 +682,6 @@ body {
     .card {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
     }
     .card_text {
         order:2;
