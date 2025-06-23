@@ -690,7 +690,7 @@ body {
         font-size: 30px;
         text-shadow: none;
         left: 0;
-        margin: 10px;
+        margin: 10px 10px 20px 10px;
         font-weight: normal;
     }
     .section-title::after {
@@ -736,9 +736,48 @@ body {
     .dine_menu {
         display: none;
     }
-
     .footer {
+        width: 100%;
+        left: 0;
+    }
+    .footer_topline::after {
         display: none;
+    }
+    .dine_card_pic {
+        display: flex;
+        gap: 15px;justify-content: space-between;
+    }
+    .dine_card_pic img {
+        /* width: 10vw; */
+        margin: auto;
+    }
+    .dine_card_pic img[src*="Dine-2.jpg"]  {
+        margin: auto 0;
+        width: 10vw;
+        
+    }
+    .dine_card_pic_s img[src*="Dine-3.jpg"] {
+        margin:auto;
+    }
+    .dine_card_pic_s {
+        display: flex;
+        margin: 0;
+        gap: 15px;
+    }
+    .dine_card_pic img[src*="Dine-5.jpg"] {
+        margin: 0;
+    }
+    .dine_card {
+        justify-content: space-around;
+    }
+    .footer_logo_img {
+        display: none;
+    }
+    .address {
+        display: block;
+    }
+    .footer_topline {
+        margin: 0;
     }
 }
 
@@ -751,11 +790,3 @@ body {
 @media (min-width: 1025px) {
   /* 桌機版樣式 */
 }
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1024px) {}
-
-@media screen and (min-width: 1200px) {}
-
-@media screen and (min-width: 1400px) {}
