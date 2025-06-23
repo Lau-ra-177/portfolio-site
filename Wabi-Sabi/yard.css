@@ -1,8 +1,8 @@
-.main_nav li:nth-child(2) {
+/* .main_nav li:nth-child(2) {
     height: 50px;
     background-color: #F0ECE4;
     box-shadow: 1px 1px 10px 1px #b2afa9;
-}
+} */
 /* .banner {
     width: 100%;
     height: auto;
@@ -194,3 +194,11 @@
     right: -10%;
 }
 /* /////////////////////// */
+@media (max-width: 767px) {
+    .content_last p {
+        right: 0;
+    }
+    .content::after, .content_last::after{
+        display: none;
+    }
+}

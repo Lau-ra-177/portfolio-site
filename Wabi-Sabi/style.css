@@ -72,10 +72,10 @@ body {
     height: auto;
     display: block;
 }
-.nav_container {
+/* .nav_container {
     max-width: 75%;
     margin: auto; 
-}
+} */
 .container_nav {
     max-width: 75%;
     margin: auto; 
