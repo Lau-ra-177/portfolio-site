@@ -710,6 +710,9 @@ body {
         box-shadow: none;
         font-size: 18px;
     }
+    .section_button a:hover::after {
+        display: none;
+    }
     .section-title {
         display: inline-block;
     }
@@ -750,7 +753,9 @@ body {
         margin-left: auto;
     }
     .card p {
-        font-size: 12px;
+        font-size: 18px;
+        letter-spacing: .1em;
+        line-height: 1.5em;
         padding: 0;
     }
     .dine_menu {
