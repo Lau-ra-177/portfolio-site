@@ -72,9 +72,13 @@ body {
     height: auto;
     display: block;
 }
+.nav_container {
+    max-width: 75%;
+    margin: auto; 
+}
 .container_nav {
     max-width: 75%;
-    margin: auto;
+    margin: auto; 
     position: relative;
     flex-direction: column;
 }
@@ -84,10 +88,17 @@ body {
     position: relative;
     flex-direction: column;
 }
+.main_nav {
+    background-color: rgba(182, 157, 129);
+}
 .main_nav ul{
     display: flex;
-    justify-content: flex-end;
-    font-size: clamp(15px, 1.5vw, 28px);
+    /* justify-content: flex-end; */
+    font-size: clamp(15px, 1.5vw, 28px);        
+    /* background-color: rgba(182, 157, 129); */
+    width: 20vw;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
 }
 .main_nav li {
     padding: 5px 8px;
@@ -96,23 +107,23 @@ body {
     align-items: end;
     justify-content: center;
     border-radius: 0px 0px 15px 15px;
-    width: 7%;
+    width: 15%;
     transition: .5s;
     letter-spacing: .05em;
 }
-.main_nav li:nth-child(1) {
+/* .main_nav li:nth-child(1) {
     height: 50px;
     background-color: #F0ECE4;
     box-shadow: 1px 1px 10px 1px #b2afa9;
-}
+} */
 .main_nav li:nth-child(-n+3) {
     margin: 0 10px 0 0;
 }
-.main_nav li:hover{
+/* .main_nav li:hover{
     height: 50px;
     background-color: #F0ECE4;
     box-shadow: 1px 1px 10px 1px #b2afa9;
-}
+} */
 .main_nav a {
     color: inherit;
     text-decoration: none;
@@ -125,7 +136,7 @@ body {
     width: 30%;
     box-sizing: border-box;
     padding: 10% 0 0 0;
-    top: 20vh;
+    top: 10vh;
 }
 .banner_right img {
     width: 100%;
@@ -625,7 +636,7 @@ body {
     .container {
         width: 85%;
     }
-    .main_nav, .banner_right {
+    .banner_right {
         opacity: 0;
     }
     .banner_left {
@@ -649,9 +660,9 @@ body {
     }
     /* ==========================*/
     .yard_area {
-        margin-top: 110vh;
+        margin-top: 100vh;
         position: relative;
-        height: 80vh;
+        
     }
     .section_button a:hover::after {
         display: none;
@@ -659,9 +670,9 @@ body {
     .section-title {
         display: inline-block;
         position: relative; 
-        font-size: 20px;
+        font-size: 30px;
         text-shadow: none;
-        left:15px;
+        left:10px;
         top:150px;
         margin: 10px;
         font-weight: normal;
@@ -731,3 +742,11 @@ body {
 @media (min-width: 1025px) {
   /* 桌機版樣式 */
 }
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}
