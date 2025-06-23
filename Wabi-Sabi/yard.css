@@ -204,26 +204,37 @@
     .content img:nth-child(3) {
         position: relative;
         right: 0;
+        order: 4;
     }
     .content img:nth-child(2) {
         margin: 0;
         width: 40%;
+        order: 3;
     }
     .content img:nth-child(4) {
         margin: 0;
+        order: 5;
     }
     .content::before {
         display: none;
     }
     .content p {
+        order:2;
         position: relative;
         font-size: 14px;
-        line-height: 3em;
+        line-height: 2em;
+        margin-left: auto;
+        margin-top: 10px;
     }
     .content img:nth-child(1) {
-        width: 40vw;
+        width: 40%;
+        order: 1;
     }
     .content img {
         display: block;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
     }
 }
