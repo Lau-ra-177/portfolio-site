@@ -201,4 +201,7 @@
     .content::after, .content_last::after{
         display: none;
     }
+    .content img:nth-child(3) {
+        position: relative;
+    }
 }
