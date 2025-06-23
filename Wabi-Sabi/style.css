@@ -645,7 +645,7 @@ body {
         background-color: rgba(255, 255, 255, 0.817); ;
         color: #000;
         box-shadow: none;
-        font-size: 20px;
+        font-size: 24px;
     }
     /* ==========================*/
     .yard_area {
@@ -658,14 +658,15 @@ body {
     .section-title {
         display: inline-block;
         position: relative; 
-        font-size: 20px;
+        font-size: 16px;
         text-shadow: none;
-        left: 0;
+        left: 25px;
+        top:100px;
         margin: 10px;
         font-weight: normal;
     }
     .topics-title{
-        font-size: 20px;
+        font-size: 16px;
         text-shadow: none;
         left: 0;
         margin: 10px;
@@ -703,7 +704,7 @@ body {
         margin-left: auto;
     }
     .card_text p {
-        font-size: 18px;
+        font-size: 14px;
         letter-spacing: .1em;
         line-height: 1.5em;
         padding: 0;
